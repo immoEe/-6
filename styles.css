@@ -66,7 +66,39 @@ body {
     margin-bottom: 2rem;
 }
 
-.add-news-btn {
+.grade-input {
+    width: 60px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.grade-input:invalid {
+    border-color: #e74c3c;
+}
+
+.subject-item {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#addStudentForm {
+    display: grid;
+    gap: 1rem;
+}
+
+#addStudentForm input,
+#addStudentForm select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.add-news-btn, .add-student-btn {
     background: var(--secondary-color);
     color: white;
     border: none;
@@ -219,6 +251,76 @@ a {
     height: 300px;
     border: none;
     border-radius: 8px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.filter-select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+.students-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.student-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-info {
+    flex-grow: 1;
+}
+
+.grades-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subjects-list {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.subject-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subject-item input {
+    width: 60px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.expel-btn {
+    background: #e74c3c;
 }
 
 @media (max-width: 768px) {
