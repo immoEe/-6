@@ -10,9 +10,9 @@
     <header class="header">
         <nav class="nav">
             <a href="index.html" style="color: #3498db;" class="nav-link"><h2>MIDIS Session</h2></a>
-            <a href="#" class="nav-link">О ВУЗе</a>
+            <a href="about.html" class="nav-link">О ВУЗе</a>
             <a href="#" class="nav-link">Контроль успеваемости</a>
-            <a href="#" class="nav-link">Вход/Регистрация</a>
+            <a href="#" id="authButton" class="nav-link">Вход/Регистрация</a>
         </nav>
     </header>
 
@@ -37,6 +37,35 @@
                 <div class="form-buttons">
                     <button type="button" class="cancel-btn">Отмена</button>
                     <button type="submit" class="submit-btn">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="loginModalOverlay">
+        <div class="modal">
+            <form class="auth-form" id="loginForm">
+                <h2>Вход</h2>
+                <input type="email" placeholder="Email" id="loginEmail" required>
+                <input type="password" placeholder="Пароль" id="loginPassword" required>
+                <div class="form-buttons">
+                    <button type="button" class="switch-auth-btn" id="switchToRegister">Регистрация</button>
+                    <button type="submit" class="submit-btn">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="registerModalOverlay">
+        <div class="modal">
+            <form class="auth-form" id="registerForm">
+                <h2>Регистрация</h2>
+                <input type="text" placeholder="Имя" id="registerName" required>
+                <input type="email" placeholder="Email" id="registerEmail" required>
+                <input type="password" placeholder="Пароль" id="registerPassword" required>
+                <div class="form-buttons">
+                    <button type="button" class="switch-auth-btn" id="switchToLogin">Вход</button>
+                    <button type="submit" class="submit-btn">Зарегистрироваться</button>
                 </div>
             </form>
         </div>
