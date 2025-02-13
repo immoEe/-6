@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Система контроля успеваемости</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" style="color: #3498db;" class="nav-link"><h2>MIDIS Session</h2></a>
+            <a href="#" class="nav-link">О ВУЗе</a>
+            <a href="#" class="nav-link">Контроль успеваемости</a>
+            <a href="#" class="nav-link">Вход/Регистрация</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="news-header">
+            <h1>Новости института</h1>
+            <button class="add-news-btn">Добавить новость</button>
+        </div>
+        <div class="news-container" id="newsContainer"></div>
+    </main>
+
+    <footer class="footer">
+        <p>2025 Челябинск. Все права защищены.</p>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <form class="news-form" id="newsForm">
+                <h2>Добавить новость</h2>
+                <input type="text" placeholder="Заголовок" id="newsTitle" required>
+                <textarea placeholder="Описание" id="newsDescription" required></textarea>
+                <div class="form-buttons">
+                    <button type="button" class="cancel-btn">Отмена</button>
+                    <button type="submit" class="submit-btn">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
 </body>
-</html>
+</html
